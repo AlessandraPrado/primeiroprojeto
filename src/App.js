@@ -8,6 +8,10 @@ function App(){
     obtemMakeup()
   },[])
 
+  useEffect(() => {
+    document.title = 'Lista MakeUp Dior'
+  },[])
+
   const [makeUp , setMakeUp] = useState([])
 
   async function obtemMakeup(){ 
